@@ -17,8 +17,14 @@ sandwich2("pb") // => "One sandwich with tomato and pb"
 
 ***********************************************************************/
 
-function sandwichMaker() {
-  // Your code here
+const sandwichMaker = () => {
+  let order = ["tomato"];
+
+  return function (items) {
+    order.push(items)
+
+    return `One sandwich with ${order.join(" and ")}`;
+  }
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
