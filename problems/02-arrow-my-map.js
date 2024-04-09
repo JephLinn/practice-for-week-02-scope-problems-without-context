@@ -19,7 +19,15 @@ console.log(result2);   // [ 'RUN!', 'FORREST!' ]
 ***********************************************************************/
 
 const arrowMyMap = (array, cb) => {
-  // Your code here
+  let newArr = [];
+
+  for (let i = 0; i <array.length; i++) {
+    let el = array[i];
+
+    newArr.push(cb(el));
+  }
+
+  return newArr
 };
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
