@@ -12,7 +12,7 @@ let result3 = reverseStr("potato"); // returns "otatop"
 
 ***********************************************************************/
 
-// Your code here
+const reverseStr = (word) => word.split("").reverse().join("");
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
