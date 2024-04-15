@@ -24,7 +24,12 @@ console.log(table2(75)); // STILL prints 6
 
 ***********************************************************************/
 function recVolume(height) {
-  // Your code here
+  let vol = []
+  return function(measurement) {
+    vol.push(measurement);
+    let volume = height * vol[0] * vol[1];
+    return volume;
+  }
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
